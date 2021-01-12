@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet" src="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="./capture/index.html" class="list-group-item-action">Ссылка 1</a>
+      <a class="nav-item nav-link" href="../image_capture_test/index.html" class="list-group-item-action">Ссылка 2</a>
+    </div>
+  </div>
+</nav>
+    <div class="vid">
+              <video onclick="snapshot(this);" id="video" controls autoplay></video>
+    </div>
+
+    <div class="container h-100 d-flex justify-content-center mx-auto" id="bttn">
+        <button class="btn btn-primary " onclick="startWebcam();">Запуск Камеры</button>
+        <button class="btn btn-danger" onclick="stopWebcam();">Стоп Камера</button> 
+        <button class="btn btn-warning" onclick="snapshot();">Сделать Снимок</button>
+        <button id="start" class="btn btn-light" onclick="startRecording();">Начать запись звука</button>
+        <button id="stop" class="btn btn-light" onclick="stopRecording();">Остановить запись звука</button>
+    </div>
+
+    <ol id="recordingsList"></ol>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
